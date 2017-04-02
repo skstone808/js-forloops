@@ -12,6 +12,10 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
   console.log("Now serving " + i);
 }
 
+for(var i=1; i<15; i++){
+  console.log("Calling number " + i);
+}
+
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:
 This week's chart buster is: 'Closer.'
@@ -192,8 +196,19 @@ console.log(copyValuesArray);
 Declare a variable named `topQuote` and assign it to a String value of your favorite one line quote.
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
+var topQuote = "If can, can. If no can, no can. Longest.";
 
+/*function longestWord(str){
+  var strToArray = str.split(" ");
+  var currentWord = "";
+  for(var i =0; i<strToArray.length; i++){
+    if(strToarray[i].length > currentWord.length){currentWord = strToArray[i]
+    }
+  }
+  return currentWord;
+}
 
+console.log(longestWord(topQuote));*/
 
 /* 12) Puppet Master
 Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
@@ -206,13 +221,25 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 
 
 
+
 /* 13) All Grown Up 
 Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each And Every Highway. But More, Much More Than This. I Did It My Way."  
 */
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
 
-
+//do it again
+/*function capFirst(phrase){
+  var phraseToArr = phrase[i].split(" ");
+  var newPhrase = phraseToArr("");
+  for(var i = 0; i<phrase.length; i++){
+    newPhrase[0] = newPhrase[0].toUpperCase();
+    phraseToArr[i] = newPhrase.join('');
+  }
+  return phraseToArr.join(" ");
+}
+ console.log(capFirst(myWay));
+*/
 
 /* 14) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
